@@ -165,6 +165,24 @@ h1 {
 
 }
 
+#campAgenda .day-content {
+    margin: 14px 0;
+    padding: 12px 0;
+    border-radius: 0px 100px 100px 0px;
+    border: 2px solid var(--Stoke, #34A2F1);
+}
+
+#campAgenda p {
+    margin-bottom: 14px;
+}
+
+#campAgenda .day-content:hover {
+    cursor: pointer;
+    background-color: #34A2F1;
+    color: #fff;
+}
+
+
 .camp-agenda h3 {
     color: #010514;
     font-size: 32px;
@@ -172,13 +190,40 @@ h1 {
     margin-bottom: 52px;
 }
 
+.img-campAgenda {
+    justify-content: right;
+}
+
+.img-campAgenda img {
+    border-radius: 16px;
+    background: url(<path-to-image>), lightgray 50% / cover no-repeat, #D9D9D9;
+    box-shadow: 0px 4px 44px -4px #00A3FF;
+}
+
+.agenda-table .active-img {
+    background-color: #34A2F1;
+}
+
+.days {
+    justify-content: right;
+}
+.agenda-ul{
+    padding: 0;
+}
+.agenda-ul li{
+    list-style: none;
+}
 .agenda-nav {
     width: fit-content;
-    background-color: #EBF6FE;
+    padding-bottom: 44px;
+
 }
 
 .agenda-nav a {
     padding: 12px 18px;
+    border-radius: 29px !important;
+    margin-right: 12px !important;
+    border: 1px solid #000958;
     color: #000;
     text-decoration: none;
 }
@@ -229,13 +274,15 @@ h1 {
 }
 
 @media (max-width: 992px) {
-    .bi-circle-fill{
+    .bi-circle-fill {
         font-size: 12px;
-        color: #F7B485; 
+        color: #F7B485;
     }
-    .vertical-3{
+
+    .vertical-3 {
         border-right: 0;
     }
+
     .custom-icon {
         margin-top: 98px;
     }
@@ -269,9 +316,10 @@ h1 {
 }
 
 @media (max-width: 572px) {
-    .vertical{
+    .vertical {
         border-right: 0;
     }
+
     .camp-details video {
         border-radius: 0;
     }
@@ -286,6 +334,7 @@ h1 {
         margin-bottom: -15px;
         z-index: 1;
     }
+
     .ellipse-2 {
         position: relative;
         width: 100%;
@@ -296,22 +345,82 @@ h1 {
         z-index: 1;
     }
 
-    .agenda-nav {
+    #campAgenda .day-content {
+        margin: 14px 0;
+        padding: 0 0;
+        border: none;
+    }
+
+    #campAgenda p {
+        margin-bottom: 14px;
+    }
+
+    #campAgenda .day-content:hover {
+        cursor: pointer;
         background-color: transparent;
-        margin-bottom: 16px !important;
+        color: #fff;
+    }
+
+    .img-campAgenda {
+        justify-content: left;
+        margin-bottom: 0 !important;
         max-width: 100%;
         overflow-x: auto;
         white-space: nowrap;
     }
-
-    .agenda-nav::-webkit-scrollbar {
+    .img-campAgenda::-webkit-scrollbar {
         visibility: hidden;
+    }
+    .agenda-table .active-img {
+        background-color: transparent;
+    }
+
+    .agenda-ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        position: relative;
+
+        &:before {
+            content: "";
+            display: inline-block;
+            width: 1px;
+            background: #34A2F1;
+            position: absolute;
+            left: 7px;
+            top: 5px;
+            height: calc(100% - 16px);
+        }
+
+        li {
+            position: relative;
+            padding-left: 24px;
+            margin-bottom: 15px;
+
+            &:before {
+                content: "";
+                display: inline-block;
+                width: 16px;
+                height: 16px;
+                background: #34A2F1;
+                position: absolute;
+                left: 0;
+                top: 3px;
+                border-radius: 16px;
+            }
+        }
+    }
+
+    .days {
+        justify-content: left !important;
+    }
+
+    .agenda-nav {
+        background-color: transparent;    
     }
 
     .agenda-nav a {
         background-color: #EBF6FE;
-        border-radius: 29px !important;
-        margin-right: 12px !important;
     }
 
     .agenda-div {

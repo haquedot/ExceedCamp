@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
 
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -249,16 +248,151 @@
         </div>
     </div>
 
-    <div class="container camp-agenda">
+    <div class="container camp-agenda" id="campAgenda">
         <h3>Camp Agenda</h3>
-        <ul class="d-flex agenda-nav list-unstyled rounded-top m-0">
-            <a class="rounded-top active" href="#day1">Day 1</a>
-            <a class="rounded-top" href="#day2">Day 2</a>
-            <a class="rounded-top" href="#day3">Day 3</a>
-            <a class="rounded-top" href="#day4">Day 4</a>
-            <a class="rounded-top" href="#day5">Day 5</a>
-        </ul>
-        <div class="agenda-div rounded-bottom">
+        <div class="row">
+            <div class="col-md-4 order-2 order-md-1 ">
+                <ul class="day-1 agenda-table agenda-ul" id="day1">
+                    <!-- <i class="gray">Early drop-off 8:30 am – 9:00 am </i> -->
+                    <li>
+                        <div class="day-content active-img" id="CampIntro">
+                            <p class="secondary-color">Camp intro & Ice breaker</p>
+                            <span class="gray">9:00 am – 10:15 am</span>
+                        </div>
+                        <img class="d-md-none" src="images/CampIntro.png" alt="">
+                    </li>
+
+                    <li>
+                        <i class="gray">Break 10:15 am - 10:30 am </i>
+                    </li>
+
+                    <li>
+                        <div class="day-content" id="GroupActivity">
+                            <p class="secondary-color">Group Activity</p>
+                            <span class="gray">10:30 am - 12:00 pm</span>
+                        </div>
+                        <img class="d-md-none" src="images/GroupActivity.png" alt="">
+                    </li>
+
+                    <li>
+                        <i class="gray">Lunch 12:00 pm - 1:00 pm </i>
+                    </li>
+
+                    <li>
+                        <div class="day-content" id="RobotAssembly">
+                            <p class="secondary-color">Robot Assembly</p>
+                            <span class="gray">9:00 am – 10:15 am</span>
+                        </div>
+                        <img class="d-md-none" src="images/RobotAssembly.png" alt="">
+                    </li>
+
+                    <li>
+                        <i class="gray">Break 2:15 pm - 2:30 pm </i>
+                    </li>
+
+                    <li>
+                        <div class="day-content" id="ComputerDesign">
+                            <p class="secondary-color">Computer Design & 3D Printing</p>
+                            <span class="gray">2:30 pm - 4:00 pm</span>
+                        </div>
+                        <img class="d-md-none" src="images/ComputerDesign.png" alt="">
+                    </li>
+
+                    <li>
+                        <i class="gray">Late pick-up 4:00 pm - 5:00 pm </i>
+                    </li>
+
+                </ul>
+                <ul class="day-2 agenda-table agenda-ul" id="day2" style="display: none;">
+                    <!-- <i class="gray">Early drop-off 8:30 am – 9:00 am </i> -->
+                    <li>
+                        <div class="day-content active-img" id="RobotAssembly">
+                            <p class="secondary-color">Robot Assembly</p>
+                            <span class="gray">9:00 am – 10:15 am</span>
+                        </div>
+                    </li>
+
+                    <li>
+                        <i class="gray">Break 10:15 am - 10:30 am </i>
+                    </li>
+
+                    <li>
+                        <div class="day-content" id="GroupActivity">
+                            <p class="secondary-color">Group Activity</p>
+                            <span class="gray">10:30 am - 12:00 pm</span>
+                        </div>
+                    </li>
+
+                    <li>
+                        <i class="gray">Lunch 12:00 pm - 1:00 pm </i>
+                    </li>
+
+                    <li>
+                        <div class="day-content" id="RobotAssembly">
+                            <p class="secondary-color">Robot Assembly</p>
+                            <span class="gray">9:00 am – 10:15 am</span>
+                        </div>
+                    </li>
+
+                    <li>
+                        <i class="gray">Break 2:15 pm - 2:30 pm </i>
+                    </li>
+
+                    <li>
+                        <div class="day-content" id="ComputerDesign">
+                            <p class="secondary-color">Computer Design & 3D Printing</p>
+                            <span class="gray">2:30 pm - 4:00 pm</span>
+                        </div>
+                    </li>
+
+                    <li>
+                        <i class="gray">Late pick-up 4:00 pm - 5:00 pm </i>
+                    </li>
+
+                </ul>
+
+
+                <ul class="day-3 agenda-table agenda-ul" id="day3" style="display: none;">
+                    <li>
+                        <div class="day-content active-img" id="CampIntro">
+                            <p class="secondary-color">Camp intro & Ice breaker</p>
+                            <span class="gray">9:00 am – 10:15 am</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="day-content" id="GroupActivity">
+                            <p class="secondary-color">Group Activity</p>
+                            <span class="gray">10:30 am - 12:00 pm</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="day-content" id="RobotAssembly">
+                            <p class="secondary-color">Robot Assembly</p>
+                            <span class="gray">9:00 am – 10:15 am</span>
+                        </div>
+                    </li>
+
+                </ul>
+
+
+
+            </div>
+            <div class="col-md-8 order-1 order-md-2 d-flex img-campAgenda">
+                <div class="d-block">
+                    <div class="d-flex days">
+                        <ul class="d-flex agenda-nav list-unstyled m-0">
+                            <a class="rounded active" href="#day1">Day 1</a>
+                            <a class="rounded" href="#day2">Day 2</a>
+                            <a class="rounded" href="#day3">Day 3</a>
+                            <a class="rounded" href="#day4">Day 4</a>
+                            <a class="rounded" href="#day5">Day 5</a>
+                        </ul>
+                    </div>
+                    <img class="d-none d-md-block" src="images/CampIntro.png" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- <div class="agenda-div rounded-bottom">
             <section id="day1">
                 <div class="accordion" id="accordionExample">
                     <div class="accordion-item">
@@ -811,7 +945,7 @@
             <div class="text-center mb-4">
                 <button class="outline-btn"><i class="bi bi-download pe-1"></i>Download Camp agenda</button>
             </div>
-        </div>
+        </div> -->
 
 
     </div>
