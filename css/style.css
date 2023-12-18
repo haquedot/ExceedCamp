@@ -404,11 +404,7 @@ h1 {
     .vertical-3 {
         border-right: 0;
     }
-
-    #section-2 .show {
-        display: block;
-    }
-
+    
     #section-2 .custom-card {
         min-width: 320px;
         min-height: 343px !important;
