@@ -422,7 +422,7 @@ h1 {
                 display: inline-block;
                 width: 16px;
                 height: 16px;
-                background: url('/images/li.svg') no-repeat left center;
+                background: url('../images/li.svg') no-repeat left center;
                 /* Replace 'path/to/your/image.png' with your image URL */
                 background-size: 16px 16px;
                 position: absolute;
@@ -442,7 +442,7 @@ h1 {
                 display: inline-block;
                 /* width: 16px;
                 height: 16px; */
-                background: url('/images/break.svg') no-repeat left center !important;
+                background: url('../images/break.svg') no-repeat left center !important;
                 /* Replace 'path/to/your/image.png' with your image URL */
                 background-size: 16px 16px !important;
                 position: absolute;
