@@ -404,11 +404,11 @@ h1 {
     .vertical-3 {
         border-right: 0;
     }
+<<<<<<< HEAD
 
-    /* #section-2 .show {
-        display: block;
-    } */
-
+=======
+    
+>>>>>>> 9481dd6e0dd62f37c078e69031a9b4b506cc9238
     #section-2 .custom-card {
         min-width: 320px;
         min-height: 343px !important;
