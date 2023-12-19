@@ -405,9 +405,9 @@ h1 {
         border-right: 0;
     }
 
-    #section-2 .show {
+    /* #section-2 .show {
         display: block;
-    }
+    } */
 
     #section-2 .custom-card {
         min-width: 320px;
