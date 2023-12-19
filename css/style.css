@@ -300,7 +300,7 @@ h1 {
 }
 
 .img-campAgenda img {
-    border-radius: 16px;
+    border-radius: 24px;
     background: url(<path-to-image>), lightgray 50% / cover no-repeat, #D9D9D9;
     box-shadow: 0px 4px 44px -4px #00A3FF;
 }
