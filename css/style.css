@@ -26,6 +26,11 @@ h1 {
     text-transform: uppercase;
 }
 
+.star {
+    color: #F8B84E;
+    font-size: 32px;
+}
+
 .overflow-auto::-webkit-scrollbar {
     visibility: hidden;
 }
@@ -237,7 +242,7 @@ h1 {
 }
 
 .testimonials-card {
-    min-width: 320px;
+    min-width: 490px;
     border: 1px solid #F18234;
     border-radius: 32px;
     padding: 17px 32px;
@@ -248,6 +253,33 @@ h1 {
 
 .testimonials-card .img-div {
     margin-top: -40px;
+}
+
+.testimonials-card span {
+    color: #000;
+    /* font-family: Inter; */
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.author h6 {
+    color: #000;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.author p {
+    color:  #707070;
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 .camp-agenda {
@@ -340,16 +372,17 @@ h1 {
 
 }
 
-.agenda-nav a {
+.agenda-nav button {
     padding: 12px 18px;
     border-radius: 29px !important;
     /* margin-right: 12px !important; */
     border: 1px solid #000958;
+    background-color: transparent;
     color: #000;
     text-decoration: none;
 }
 
-.agenda-nav a.active {
+.agenda-nav button.active {
     background-color: #000958;
     color: #fff;
 }
@@ -607,4 +640,36 @@ h1 {
         padding-left: 0;
     }
 
+    .testimonials-card {
+        min-width: 320px;
+        /* border: 1px solid #F18234;
+        border-radius: 32px; */
+        padding: 17px 14px;
+        /* background: #FFF; */
+
+
+    }
+
+    .testimonials-card .img-div {
+        height: 59px;
+        margin-top: 0px;
+    }
+
+    .author h6 {
+        color: #000;
+        font-family: Poppins;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .author p {
+        color: var#707070;
+        font-family: Poppins;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
 }
