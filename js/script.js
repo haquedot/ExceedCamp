@@ -11,7 +11,7 @@ $(document).ready(function () {
         $(".agenda-table .day-content").removeClass("active-img");
         $(this).addClass("active-img");
         var dayContent = $(this).attr("id");
-        $(".img-campAgenda img").attr('src', 'images/' + dayContent + '.png');
+        $(".img-campAgenda img").attr('src', 'images/' + 'ComputerDesign' + '.png');
     });
     $('.btnag').click(function() {
         var index = $('.btnag').index(this);
