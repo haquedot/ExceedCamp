@@ -1,37 +1,27 @@
-$(document).ready(function () {
-    // $(".agenda-nav a").click(function () {
-    //     $(".agenda-table").children().first().addClass("active-img");
-    //     $(".agenda-nav a").removeClass("active");
-    //     $(this).addClass("active");
-    //     $(".agenda-table").hide();
-    //     var sectionId = $(this).attr("href");
-    //     $(sectionId).show();
-    // });
-    $(".day-content").click(function () {
-        $(".agenda-table .day-content").removeClass("active-img");
-        $(this).addClass("active-img");
-        var dayContent = $(this).attr("id");
-        $(".img-campAgenda img").attr('src', 'images/' + dayContent + '.png');
-    });
-    $('.btnag').click(function() {
-        var index = $('.btnag').index(this);
-        $(".agenda-nav button").removeClass("active");
-        $(this).addClass("active");
-        $('.agenda-ul').eq(index).show().siblings('.agenda-ul').hide();
-    });
-    
-});
+document.addEventListener('DOMContentLoaded', function () {
+    const dayLinks = document.querySelectorAll('.agenda-nav a');
+    const sections = document.querySelectorAll('.agenda-div > section');
 
-// const btnag = document.querySelectorAll(".btnag");
-// const agendaUl=document.querySelectorAll('.agenda-ul');
-// btnag.forEach((element, i)=>{
-//     element.addEventListener('click', ()=>{
-//         agendaUl[i].style.display='block';
-//         for(var j=0;j<agendaUl.length;j++){
-//             if(j!=i){
-//                 agendaUl[j].style.display='none';
-//             }
-//         }
-//     })
-// }
-// )
+    function showSection(dayId) {
+        sections.forEach(section => {
+            section.style.display = 'none';
+        });
+
+        dayLinks.forEach(link => {
+            link.classList.remove('active');
+        });
+
+        document.querySelector(dayId).style.display = 'block';
+        document.querySelector(`.agenda-nav a[href="${dayId}"]`).classList.add('active');
+    }
+
+    dayLinks.forEach(link => {
+        link.addEventListener('click', function (event) {
+            event.preventDefault();
+            const dayId = this.getAttribute('href');
+            showSection(dayId);
+        });
+    });
+
+    showSection('#sevenYears');
+});
